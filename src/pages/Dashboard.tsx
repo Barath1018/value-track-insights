@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DollarSign, TrendingUp, CreditCard, Users } from 'lucide-react';
+import { DollarSign, TrendingUp, CreditCard, Percent } from 'lucide-react';
 import MetricCard from '../components/MetricCard';
 import SalesChart from '../components/charts/SalesChart';
 import ProfitChart from '../components/charts/ProfitChart';
@@ -16,31 +16,35 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <MetricCard
           title="Total Revenue"
-          value="$847,520"
-          change={12.5}
-          icon={<DollarSign className="w-6 h-6" />}
+          value="$622,299"
+          change={5979}
+          changeText="vs last month"
+          icon={<DollarSign className="w-5 h-5" />}
           color="blue"
         />
         <MetricCard
-          title="Total Profit"
-          value="$254,256"
-          change={8.2}
-          icon={<TrendingUp className="w-6 h-6" />}
+          title="Net Profit"
+          value="$169,371"
+          change={2989}
+          changeText="vs last month"
+          icon={<TrendingUp className="w-5 h-5" />}
           color="green"
         />
         <MetricCard
           title="Total Expenses"
-          value="$593,264"
-          change={-3.1}
-          icon={<CreditCard className="w-6 h-6" />}
+          value="$452,928"
+          change={68}
+          changeText="vs last month"
+          icon={<CreditCard className="w-5 h-5" />}
           color="red"
         />
         <MetricCard
-          title="Active Customers"
-          value="2,847"
-          change={15.3}
-          icon={<Users className="w-6 h-6" />}
-          color="purple"
+          title="Profit Margin"
+          value="+27.2%"
+          change={2.1}
+          changeText="vs last month"
+          icon={<Percent className="w-5 h-5" />}
+          color="orange"
         />
       </div>
 
