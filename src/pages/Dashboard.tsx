@@ -20,7 +20,7 @@ const Dashboard = () => {
           change={12.5}
           changeText="vs last month"
           icon={<DollarSign className="w-5 h-5" />}
-          color="blue"
+          color="green"
         />
         <MetricCard
           title="Total Profit"
@@ -28,7 +28,7 @@ const Dashboard = () => {
           change={8.2}
           changeText="vs last month"
           icon={<TrendingUp className="w-5 h-5" />}
-          color="green"
+          color="orange"
         />
         <MetricCard
           title="Total Expenses"
@@ -44,7 +44,7 @@ const Dashboard = () => {
           change={15.3}
           changeText="vs last month"
           icon={<Users className="w-5 h-5" />}
-          color="orange"
+          color="blue"
         />
       </div>
 
