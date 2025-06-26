@@ -12,11 +12,11 @@ interface MetricCardProps {
 }
 
 const MetricCard: React.FC<MetricCardProps> = ({ title, value, change, changeText, icon, color }) => {
-  const colorClasses = {
-    blue: 'bg-blue-50 text-blue-600',
-    green: 'bg-green-50 text-green-600', 
-    red: 'bg-red-50 text-red-600',
-    orange: 'bg-orange-50 text-orange-600',
+  const iconColors = {
+    blue: 'text-blue-600',
+    green: 'text-green-600', 
+    red: 'text-red-600',
+    orange: 'text-orange-600',
   };
 
   const isPositive = change >= 0;
@@ -28,7 +28,7 @@ const MetricCard: React.FC<MetricCardProps> = ({ title, value, change, changeTex
           <p className="text-sm font-medium text-gray-600 mb-1">{title}</p>
           <p className="text-2xl font-bold text-gray-900">{value}</p>
         </div>
-        <div className={`p-2 rounded-lg ${colorClasses[color]}`}>
+        <div className={`p-2 rounded-lg bg-white ${iconColors[color]}`}>
           {icon}
         </div>
       </div>
