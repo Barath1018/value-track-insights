@@ -20,7 +20,7 @@ const Sidebar = () => {
             <DollarSign className="w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-xl font-bold">BizDash</h1>
+            <h1 className="text-xl font-bold">InsightEdge</h1>
             <p className="text-slate-400 text-sm">Business Intelligence</p>
           </div>
         </div>
